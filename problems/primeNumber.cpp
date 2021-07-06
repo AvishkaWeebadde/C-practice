@@ -1,5 +1,5 @@
 /* --logic--
-brute force : O(n)
+brute force method : O(n)
 
     searching for a divisor from 2 to n-1 through a loop
 
