@@ -41,45 +41,33 @@ void seiveOfEratosthenes(int n)
     for(int i = 2; i <= n; i++)
     {
         isPrime[i] = true;
-        cout << i<<"-"<<isPrime[i] << " ";
     }
 
-    cout << endl;
-
-    for(int i = 0; i <= n / 2; i++)
+    for(int i = 0; i < n / 2; i++)
     {
         if(isPrime[i] == true)
         {
             for(int j = i * 2; j <= n; j += i)
             {
                 isPrime[j] = false;
-                cout << j << "fac" << " ";
-                
             }
-            cout << endl;
         }
-        //cout << i << "-" << isPrime[i] << ". ";
     }
-    cout << endl;
-    //isPrime[4] = false;
 }
 
 int main()
 {
-    int n,count = 0;
+    int n, prime = 0;
     cin >> n;
 
     seiveOfEratosthenes(n);
 
     for(int i = 2; i <= n; i++)
     {
-        //if(isPrime[i] == true)
-        //{
-            cout << i << " " << isPrime[i] << endl;
-            //count++;
-        //}
+        if(isPrime[i] == true)
+            prime++;
     }
 
-    //cout << count;
+    cout << prime;
     return 0;
 }
