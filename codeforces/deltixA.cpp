@@ -3,10 +3,7 @@ using namespace std;
 
 int main()
 {
-    int t;
-   
-
-    cout << (2 ^ 4) << endl;
-    
+    int n;
+    cin >> n;
     return 0;
 }
