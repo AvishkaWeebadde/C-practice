@@ -73,13 +73,11 @@ int main()
 
     for(int i = 2; i <= n; i++)
     {
-        //if(isPrime[i] == true)
-        //{
+        if(isPrime[i] == true)
+        {
             cout << i << " " << isPrime[i] << endl;
-            //count++;
-        //}
+            
+        }
     }
-
-    //cout << count;
     return 0;
 }
