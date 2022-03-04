@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
  using namespace std;
  const int N=100020;
  int a[N]={0};

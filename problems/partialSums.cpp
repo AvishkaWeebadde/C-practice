@@ -28,6 +28,6 @@ int main()
     cout << endl;
     cin >> q1 >> q2;
 
-    cout << sum[q2] << sum[q1-1] << "\n";
+    cout << sum[q2] << " " << sum[q1-1] << "\n";
     return 0;
 }

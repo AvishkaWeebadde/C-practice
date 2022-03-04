@@ -3,7 +3,7 @@ Time complexity = O(sqrt(n))
 --logic--
 Two arrays for keeping the prime factor and the exponent of the relevant prime factor.
 
-Diving any number with prime factors will yeild 1 at the end. So the loop will end when the remainder hits 1.
+Dividing any number with prime factors will yeild 1 at the end. So the loop will end when the remainder hits 1.
 The number 'n' will be divided by the divisor for as long as the modulus of the two will yeild zero.
 
 Worst case -> n being a prime number will run the loop until d = n. 
@@ -33,7 +33,12 @@ void primeFact(int n)
         len++;
         f[len] = 2;
         expo[len] = 0;
+
+        for(int i = 0; i < len; ++i)
+            cout << i << " " << f[i] << " " << expo [i] << endl;
         return;
+
+        
     }
 
     int d = 2;
@@ -70,6 +75,7 @@ int main()
 {
     int n;
     cin >> n;
+    //cout << len << endl;
 
     primeFact(n);
 

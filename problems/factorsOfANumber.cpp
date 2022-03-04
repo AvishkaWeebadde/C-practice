@@ -39,10 +39,15 @@ int main()
     for (int i = 1; i * i <= n; i ++)
         if (n % i == 0) {
             cnt ++;
+            cout << i << " ";
             if (i != n/i)
+            {
                 cnt ++;
+                cout << n << " " << i << " " << n / i << endl;
+            }
+                
         }
-
+    cout << endl;
     cout << cnt << endl;
 
     return 0;

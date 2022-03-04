@@ -16,8 +16,8 @@ void mergeSort(int arr[], int l, int r)
 		
 		// Same as (l+r)/2 but avoids
 		// overflow for large l & h
-		int m = l + (r - l) / 2;
-		mergeSort(arr, l, m);
+		int m = l + (r - l) / 2; // l = 0, r - l = 9 - 0 , m = 4/// // l = 0, r - l = 4 - 0,, m = 2 ///  l = 0, r - l = 2 - 0, m = 1 
+		mergeSort(arr, l, m); // l = 0, r = 4, 
 		mergeSort(arr, m + 1, r);
 		merge(arr, l, m, r);
 	}
