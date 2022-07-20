@@ -23,13 +23,15 @@ int main()
         {
             if (m >= coins[i])
             {
+                //cout << m << " " << i << " " << coins[i] << endl;
                 int numCoins = minNumCoins[m - coins[i]] + 1;
+                //cout << "num" << numCoins << " min " << minNumCoins[m - coins[i]] << endl; 
                 if(numCoins < minNumCoins[m]) minNumCoins[m] = numCoins;
             } 
         }
     }
 
-    for(int i = 0; i <= amount; ++i) cout << i << " = " << minNumCoins[i] << endl; 
+    //for(int i = 0; i <= amount; ++i) cout << i << " = " << minNumCoins[i] << endl; 
     cout << endl;
 
 
